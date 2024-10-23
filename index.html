@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p8_flexbox</title>
+    <style>
+*{
+        margin: 0;
+        padding: 0;       
+ }
+#cajita{
+width: 100vw;
+height: 100vh;
+background-color: black;
+display: flex;
+align-items: space-around;
+justify-content: space-around;
+}
+.quadrat{
+width: 15vw;
+height: 15vw;
+background-color: blue;
+align-self: flex-end;
+margin-bottom: 10vh;
+}
+.cercle{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 15vw;
+    background-color: red;
+    order:-1;
+    margin-top: 10vh;
+}
+.rect{
+    width: 17vw;
+    height: 90vh;
+    background-color: green;
+    align-self: center; 
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+    </style>
+</head>
+<body>
+    <div id="cajita">
+        <a href="img/referencia.jpg"><div class="cercle"></div></a>
+        <div class="rect"></div>
+        <div class="quadrat"></div>
+</body>
+</html>
